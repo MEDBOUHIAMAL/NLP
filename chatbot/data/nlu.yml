@@ -1,0 +1,20 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - Hello
+    - Hi
+    - Hey there!
+
+- intent: goodbye
+  examples: |
+    - Goodbye
+    - See you later
+    - Farewell
+
+- intent: inform
+  examples: |
+    - I want to order [pizza](dish)
+    - Tell me about [Rasa](technology)
+    - [Bob](person) is my friend

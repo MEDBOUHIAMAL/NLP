@@ -1,0 +1,34 @@
+version: "2.0"
+
+intents:
+  - greet
+  - goodbye
+  - inform
+
+entities:
+  - dish
+  - technology
+  - person
+
+responses:
+  utter_greet:
+    - text: "Hello! How can I assist you today?"
+
+  utter_goodbye:
+    - text: "Goodbye! Have a great day."
+
+  utter_inform:
+    - text: "Sure, I can help you with that."
+
+slots:
+  dish:
+    type: text
+  technology:
+    type: text
+  person:
+    type: text
+
+actions:
+- utter_greet
+- utter_goodbye
+- utter_inform
